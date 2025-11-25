@@ -1,0 +1,288 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - strong [ref=e5]:
+          - text: 🎁 Даруємо iPhone 17 Pro Max за донати на НРК. 1 шанс — 300 грн.
+          - link "Донать і вигравай!" [ref=e6] [cursor=pointer]:
+            - /url: https://dou.ua/goto/top/?id=926&lnk=1
+        - link "×" [ref=e7] [cursor=pointer]:
+          - /url: "#"
+      - banner [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "DOU Logo" [ref=e11] [cursor=pointer]:
+              - /url: https://dou.ua/
+          - listitem [ref=e12]:
+            - link "Форум" [ref=e13] [cursor=pointer]:
+              - /url: https://dou.ua/forums/
+          - listitem [ref=e14]:
+            - link "Стрічка" [ref=e15] [cursor=pointer]:
+              - /url: https://dou.ua/lenta/
+          - listitem [ref=e16]:
+            - link "Зарплати" [ref=e17] [cursor=pointer]:
+              - /url: https://jobs.dou.ua/salaries/
+          - listitem [ref=e18]:
+            - link "Робота" [ref=e19] [cursor=pointer]:
+              - /url: https://jobs.dou.ua/
+          - listitem [ref=e20]:
+            - link "Календар" [ref=e21] [cursor=pointer]:
+              - /url: https://dou.ua/calendar/
+          - listitem [ref=e22]:
+            - link "Спільноти" [ref=e23] [cursor=pointer]:
+              - /url: https://dou.ua/communities/
+          - listitem [ref=e24]:
+            - link [ref=e25] [cursor=pointer]:
+              - /url: https://dou.ua/goto/?id=625&mini
+        - generic [ref=e26]:
+          - textbox "пошук" [ref=e28]
+          - link "GameDev" [ref=e29] [cursor=pointer]:
+            - /url: https://gamedev.dou.ua/?from=button
+          - link "Вхід і реєстрація" [ref=e30] [cursor=pointer]:
+            - /url: javascript:;
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - text: Беріть участь у новому
+          - link "зарплатному опитуванні" [ref=e41] [cursor=pointer]:
+            - /url: https://dou.ua/lenta/sitenews/winter-survey-2025/?from=salaries
+        - generic [ref=e43]:
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - generic [ref=e48]:
+                - button "Категорія ..." [ref=e50] [cursor=pointer]:
+                  - generic [ref=e51]: Категорія
+                  - generic [ref=e54]: ...
+                - generic [ref=e56]:
+                  - button "Дата ..." [ref=e58] [cursor=pointer]:
+                    - generic [ref=e59]: Дата
+                    - generic [ref=e62]: ...
+                  - button "Фільтри" [ref=e64] [cursor=pointer]:
+                    - generic [ref=e65]: Фільтри
+                    - img [ref=e66]
+              - generic [ref=e68]: Суми вказані net (після сплати податків), без бонусів
+              - generic [ref=e69]:
+                - generic [ref=e74] [cursor=pointer]: Зарплати разом з бонусом
+                - generic [ref=e76]: "Кількість анкет: 0"
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - generic [ref=e79]: "0"
+                - heading "I Квартиль, $" [level=4] [ref=e80]
+              - generic [ref=e82]:
+                - generic [ref=e83]: "0"
+                - heading "Медіана, $" [level=4] [ref=e84]
+              - generic [ref=e86]:
+                - generic [ref=e87]: "0"
+                - heading "III Квартиль, $" [level=4] [ref=e88]
+            - generic [ref=e90]:
+              - heading "Розподіл зарплат за кількістю анкет" [level=4] [ref=e91]
+              - img [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e95]: Завантажуємо
+                  - generic [ref=e96]: ще трохи
+                - generic [ref=e98]:
+                  - generic [ref=e99]: "0"
+                  - generic [ref=e100]: 1k
+                  - generic [ref=e101]: 2k
+                  - generic [ref=e102]: 3k
+                  - generic [ref=e103]: 4k
+                  - generic [ref=e104]: 5k
+                  - generic [ref=e105]: 6k
+                  - generic [ref=e106]: 7k
+                  - generic [ref=e107]: 8k
+                  - generic [ref=e108]: 9k
+                  - generic [ref=e109]: 10k
+            - generic [ref=e121]:
+              - heading "Динаміка медіанних зарплат" [level=4] [ref=e123]
+              - list [ref=e124]:
+                - listitem [ref=e125]:
+                  - generic [ref=e126]: Усі спеціалізації
+              - img [ref=e127]:
+                - generic [ref=e128]:
+                  - generic [ref=e130]:
+                    - generic [ref=e131]: "2017"
+                    - generic [ref=e132]: "2018"
+                    - generic [ref=e133]: "2019"
+                    - generic [ref=e134]: "2020"
+                    - generic [ref=e135]: "2021"
+                    - generic [ref=e136]: "2022"
+                    - generic [ref=e137]: "2023"
+                    - generic [ref=e138]: "2024"
+                  - generic [ref=e139]:
+                    - generic [ref=e141]: "0"
+                    - generic [ref=e143]: 1 000
+                    - generic [ref=e145]: 2 000
+                    - generic [ref=e147]: 3 000
+                    - generic [ref=e149]: 4 000
+                    - generic [ref=e151]: 5 000
+                  - generic [ref=e155]:
+                    - generic: Чер 2025
+                    - generic: $3400
+                    - generic: ∆+$100
+                - generic [ref=e193]:
+                  - generic [ref=e195]: Завантажуємо
+                  - generic [ref=e196]: ще трохи
+          - generic:
+            - generic:
+              - button "Приховати →"
+              - generic [ref=e197]:
+                - heading "Тайтл" [level=4] [ref=e199]
+                - generic [ref=e200] [cursor=pointer]: ...
+              - generic [ref=e201]:
+                - heading "Спеціалізація" [level=4] [ref=e203]
+                - generic [ref=e204] [cursor=pointer]: ...
+              - generic [ref=e205]:
+                - heading "Досвід" [level=4] [ref=e207]
+                - generic:
+                  - generic [ref=e209]: •
+                  - generic [ref=e210]: •
+                  - generic [ref=e211]: •
+                  - generic [ref=e212]: •
+                  - generic [ref=e213]: •
+                  - generic [ref=e214]: •
+                  - generic [ref=e215]: •
+                  - generic [ref=e216]: •
+                  - generic [ref=e217]: •
+                  - generic [ref=e218]: •
+                  - generic [ref=e219]: •
+                - img [ref=e220]
+              - generic [ref=e228]:
+                - heading "Область" [level=4] [ref=e230]
+                - generic [ref=e231] [cursor=pointer]: ...
+              - generic [ref=e232]:
+                - heading "Тип компанії" [level=4] [ref=e234]
+                - generic [ref=e235] [cursor=pointer]: ...
+              - generic [ref=e236]:
+                - heading "Домен" [level=4] [ref=e238]
+                - generic [ref=e239] [cursor=pointer]: ...
+              - generic [ref=e240]:
+                - heading "Англійська" [level=4] [ref=e242]
+                - generic:
+                  - generic [ref=e243]: •
+                  - generic [ref=e244]: •
+                  - generic [ref=e245]: •
+                  - generic [ref=e246]: •
+                  - generic [ref=e247]: •
+                - img [ref=e248]
+        - paragraph [ref=e257]:
+          - text: Якщо маєте зауваження, побажання щодо віджета, пишіть на
+          - link "alyona@dou.ua" [ref=e258] [cursor=pointer]:
+            - /url: mailto:alyona@dou.ua
+          - text: ". Дані опитування в CSV:"
+          - link "github.com/devua/csv/tree/master/salaries" [ref=e259] [cursor=pointer]:
+            - /url: https://github.com/devua/csv/tree/master/salaries
+          - text: .
+      - generic [ref=e261]:
+        - generic [ref=e262]:
+          - heading "Зарплатні звіти — літо 2025" [level=4] [ref=e263]:
+            - link "Зарплатні звіти — літо 2025" [ref=e264] [cursor=pointer]:
+              - /url: https://dou.ua/lenta/tags/зарплатні звіти/?from=analytics_widget
+          - list [ref=e265]:
+            - listitem [ref=e266]:
+              - link "Зарплати українських розробників" [ref=e267] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/salary-report-devs-summer-2025/?from=analytics_widget_salary
+            - listitem [ref=e268]:
+              - link "Зарплати тестувальників" [ref=e269] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/salary-report-qa-summer-2025/?from=analytics_widget_salary
+            - listitem [ref=e270]:
+              - link "Зарплати менеджерів в IT" [ref=e271] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/salary-report-managers-summer-2025/?from=analytics_widget_salary
+            - listitem [ref=e272]:
+              - link "Зарплати аналітиків та фахівців з Data Science, Data Engineering, AI/ML" [ref=e273] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/salary-report-data-summer-2025/?from=analytics_widget_salary
+            - listitem [ref=e274]:
+              - link "Зарплати DevOps, SRE, Security і SysAdmin" [ref=e275] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/salary-report-devops-summer-2025/?from=analytics_widget_salary
+            - listitem [ref=e276]:
+              - link "Зарплати фахівців з Design, Leadership, HR, Recruiting, Marketing, Sales, Support та інших" [ref=e277] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/salary-report-non-tech-summer-2025/?from=analytics_widget_salary
+        - generic [ref=e278]:
+          - heading "Аналітика" [level=4] [ref=e279]:
+            - link "Аналітика" [ref=e280] [cursor=pointer]:
+              - /url: https://dou.ua/lenta/tags/аналітика/?from=analytics_widget
+          - list [ref=e281]:
+            - listitem [ref=e282]:
+              - link "58% ІТ-фахівців проти Дія City. Результати опитування" [ref=e283] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/diia-city-survey-results-2024/?from=analytics_widget
+            - listitem [ref=e284]:
+              - link "Де в Польщі відкрилося найбільше українських IT-компаній та який у них капітал" [ref=e285] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/ukrainian-it-business-in-poland/?from=analytics_widget
+            - listitem [ref=e286]:
+              - 'link "Тренди вступної кампанії 2025: інтерес до IT знижується" [ref=e287] [cursor=pointer]':
+                - /url: https://dou.ua/lenta/articles/top-majors-by-number-of-applications-2025/?from=analytics_widget
+            - listitem [ref=e288]:
+              - link "Скільки податків сплачуть ІТ-фахівці. Інфографіка" [ref=e289] [cursor=pointer]:
+                - /url: https://dou.ua/lenta/articles/how-much-taxes-it-companies-pay/?from=analytics_widget
+            - listitem [ref=e290]:
+              - 'link "Рейтинг ІТ-напрямів для новачків: з чого краще почати кар’єру у 2025" [ref=e291] [cursor=pointer]':
+                - /url: https://dou.ua/lenta/articles/rating-for-it-newcomers-2025/?from=analytics_widget
+            - listitem [ref=e292]:
+              - 'link "Бронювання в ІТ-галузі: хто з айтівців і де отримує «бронь» найчастіше" [ref=e293] [cursor=pointer]':
+                - /url: https://dou.ua/lenta/articles/reserved-employees-in-it-2025/?from=analytics_widget
+  - contentinfo [ref=e294]:
+    - generic [ref=e296]:
+      - generic [ref=e298]:
+        - text: © 2005—2025
+        - strong [ref=e299]:
+          - link "DOU.ua" [ref=e300] [cursor=pointer]:
+            - /url: https://dou.ua/
+        - paragraph [ref=e301]:
+          - strong [ref=e302]: Українська
+          - text: ·
+          - link "English" [ref=e303] [cursor=pointer]:
+            - /url: "?switch_lang=en"
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - link "Нас уже 827 674" [ref=e308] [cursor=pointer]:
+              - /url: https://dou.ua/users/
+            - text: .
+          - text: "Ми в соцмережах:"
+          - link "Facebook" [ref=e309] [cursor=pointer]:
+            - /url: https://www.facebook.com/doucommunity
+            - img "Facebook" [ref=e310]
+          - link "Twitter" [ref=e311] [cursor=pointer]:
+            - /url: https://twitter.com/doucommunity
+            - img "Twitter" [ref=e312]
+          - link "GitHub" [ref=e313] [cursor=pointer]:
+            - /url: https://github.com/devua/csv
+            - img "GitHub" [ref=e314]
+          - link "LinkedIn" [ref=e315] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/developers.org.ua/
+            - img "LinkedIn" [ref=e316]
+          - link "Telegram" [ref=e317] [cursor=pointer]:
+            - /url: https://dou.ua/telegram/
+            - img "Telegram" [ref=e318]
+          - link "YouTube" [ref=e319] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC6If-LcFxUDJhgL9dmB8oMA
+            - img "YouTube" [ref=e320]
+          - link "TikTok" [ref=e321] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@doucommunity
+            - img "TikTok" [ref=e322]
+          - link "Instagram" [ref=e323] [cursor=pointer]:
+            - /url: https://www.instagram.com/doucommunity/
+            - img "Instagram" [ref=e324]
+          - link "WhatsApp" [ref=e325] [cursor=pointer]:
+            - /url: https://whatsapp.com/channel/0029Va4zO94HrDZlGGpBCl1I
+            - img "WhatsApp" [ref=e326]
+        - link "Пошук програмістів на Джині" [ref=e328] [cursor=pointer]:
+          - /url: https://djinni.co/developers/?from=dou-footer
+      - generic [ref=e330]:
+        - list [ref=e331]:
+          - listitem [ref=e332]:
+            - link "Контакти" [ref=e333] [cursor=pointer]:
+              - /url: https://dou.ua/contacts/
+          - listitem [ref=e334]:
+            - link "Реклама" [ref=e335] [cursor=pointer]:
+              - /url: https://dou.ua/adv/
+          - listitem [ref=e336]:
+            - link "Legal" [ref=e337] [cursor=pointer]:
+              - /url: https://dou.ua/legal/
+        - text: Пишіть нам на
+        - link "support@dou.ua" [ref=e338] [cursor=pointer]:
+          - /url: mailto:support@dou.ua
+  - text:     
+```

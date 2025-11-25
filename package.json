@@ -1,0 +1,20 @@
+{
+  "name": "playwritetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "playwright": "^1.56.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
