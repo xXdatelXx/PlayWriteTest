@@ -1,40 +1,33 @@
-﻿import { test } from '@playwright/test';
+﻿import { test, expect } from '@playwright/test';
+import config from '../playwright.config';
 import { HomePage } from './pages/HomePage';
 import { SalaryPage } from './pages/SalaryPage';
 
-test.describe('QA Automation Salary Checks', () => {
+test('QA Automation Salary full flow', async ({ page }) => {
+  const homePage = new HomePage(page);
+  const salaryPage = new SalaryPage(page);
 
-  test('Open home page', async ({ page }) => {
-    const homePage = new HomePage(page);
-    await homePage.open();
-  });
+  // Open home and assert base URL
+  await homePage.open();
+  expect(page.url()).toBe(config.use!.baseURL);
 
-  test('Navigate to salary page', async ({ page }) => {
-    const homePage = new HomePage(page);
-    const salaryPage = new SalaryPage(page);
+  // Navigate to salaries and assert page opened
+  await homePage.goToSalaries();
+  expect(page.url()).toMatch(/salaries/);
 
-    await homePage.open();
-    await homePage.goToSalaries();
-    await salaryPage.checkPageOpened();
-  });
+  // Select filter and assert query contains Automation QA
+  const queriesAfterFilter = await salaryPage.selectFilter();
+  expect(queriesAfterFilter).toContain('Automation QA');
 
-  test('Select experience: 2 years', async ({ page }) => {
-    const homePage = new HomePage(page);
-    const salaryPage = new SalaryPage(page);
+  // Select experience 2 years and assert queries contain experience text
+  const queriesAfterExp = await salaryPage.selectExperience2Years();
+  expect(queriesAfterExp).toContain('2 роки — 10 і більше років');
 
-    await homePage.open();
-    await homePage.goToSalaries();
-    await salaryPage.selectFilter();
-    await salaryPage.selectExperience2Years();
-  });
+  // Compare medians
+  const mediansFromGraph = await salaryPage.medianFromGraph();
+  const medianFromBlock = await salaryPage.medianFromBlock();
 
-  test('Compare median salaries', async ({ page }) => {
-    const homePage = new HomePage(page);
-    const salaryPage = new SalaryPage(page);
-
-    await homePage.open();
-    await homePage.goToSalaries();
-    await salaryPage.selectFilter();
-    await salaryPage.compareMedians();
-  });
+  expect(medianFromBlock).toBeGreaterThanOrEqual(0);
+  expect(mediansFromGraph).toBeGreaterThanOrEqual(0);
+  expect(medianFromBlock).toEqual(mediansFromGraph);
 });

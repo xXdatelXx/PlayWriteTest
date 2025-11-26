@@ -1,37 +1,39 @@
 ﻿import { Page, expect } from '@playwright/test';
 
 export class SalaryPage {
-    constructor(private page: Page) {}
+    constructor(private page: Page) { }
 
-    async checkPageOpened() {
-        await expect(this.page).toHaveURL(/salaries/)
-    }
-
-    async selectFilter() {
-        // Select specialization        
-        await this.page.locator('#dd-position .dd-button').waitFor({ state: 'visible' });
-        await this.page.click('#dd-position .dd-button');
+    async selectFilter(): Promise<string> {
+        // Select specialization
+        await this.page.getByRole('button', { name: 'Software Engineering & Architecture' }).click();
         await this.page.locator('li.item', { hasText: 'QA & QC' }).click();
         await this.page.locator('#selector-position').getByText('Усі спеціалізації').click();
-        
+
         // Select fillter
         await this.page.getByRole('button', { name: 'Фільтри' }).click();
         await this.page.getByText('Automation QA', { exact: true }).click();
-        
-        await expect(this.page.locator('#queries')).toContainText('Automation QA');
+
+        return await this.page.locator('#queries').innerText();
     }
 
-    async selectExperience2Years() {
+    async selectExperience2Years(): Promise<string> {
         await this.page.goto(this.page.url() + '&experience=2-10');
-        await this.page.getByRole('button').filter({ hasText: 'button-filters' });
-        
-        await expect(this.page.locator('#queries')).toContainText('2 роки — 10 і більше років');
+        this.page.getByRole('button').filter({ hasText: 'button-filters' });
+
+        return await this.page.locator('#queries').innerText();
     }
 
-    async compareMedians() {
-        const first = await this.page.locator('#dws-ch-numbers #median .value').innerText();
-        const second = await this.page.locator('svg #tm-point text.tm-ref-value').textContent();
+    async medianFromBlock(): Promise<number> {
+        return Number((await this.page.locator('#dws-ch-numbers #median .value')
+            .innerText())
+            .trim()
+            .replace(/[$,\s]/g, ''));
+    }
 
-        expect(first).toBe(second?.trim());
+    async medianFromGraph(): Promise<number> {
+        return Number((await this.page.locator('svg #tm-point text.tm-ref-value')
+            .textContent())!
+            .trim()
+            .replace(/[$,\s]/g, ''));
     }
 }
